@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum TabBarModel {
     case main
@@ -23,6 +24,21 @@ enum TabBarModel {
             return "Профиль"
         }
         
+        var image: UIImage? {
+            switch self {
+            case .main:
+                return UIImage(named: "mainTab")
+            case .favorite:
+                return UIImage(named: "favoriteTab")
+            case .profile:
+                return UIImage(named: "profileTab")
+            }
+        }
+        
+        
+        var selectedImage: UIImage? {
+            return image 
+        }
         
         
         
