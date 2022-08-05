@@ -8,9 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor.red
     }
+    @IBAction func Button(_ sender: UIButton) {
+        navigationController?.present(ProfileViewController(), animated: true )
+    }
+    
+    
 }
 
  
