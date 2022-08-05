@@ -23,24 +23,21 @@ enum TabBarModel {
         case .profile:
             return "Профиль"
         }
-        
-        var image: UIImage? {
-            switch self {
-            case .main:
-                return UIImage(named: "mainTab")
-            case .favorite:
-                return UIImage(named: "favoriteTab")
-            case .profile:
-                return UIImage(named: "profileTab")
-            }
+    }
+    
+    var image: UIImage? {
+        switch self {
+        case .main:
+            return UIImage(named: "mainTab")
+        case .favorite:
+            return UIImage(named: "favoriteTab")
+        case .profile:
+            return UIImage(named: "profileTab")
         }
-        
-        
-        var selectedImage: UIImage? {
-            return image 
-        }
-        
-        
-        
+    }
+    
+    
+    var selectedImage: UIImage? {
+        return image
     }
 }

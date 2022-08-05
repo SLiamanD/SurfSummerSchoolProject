@@ -14,6 +14,7 @@
 		C8233468289D8E2E00F956FE /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8233466289D8E2E00F956FE /* FavoriteViewController.swift */; };
 		C8233469289D8E2E00F956FE /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8233467289D8E2E00F956FE /* FavoriteViewController.xib */; };
 		C823346D289D903800F956FE /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823346C289D903800F956FE /* TabBarModel.swift */; };
+		C823346F289D95D400F956FE /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823346E289D95D400F956FE /* TabBarConfigurator.swift */; };
 		C845AD0F28999A530026C2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C845AD0E28999A530026C2EB /* AppDelegate.swift */; };
 		C845AD1828999A5B0026C2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C845AD1728999A5B0026C2EB /* Assets.xcassets */; };
 		C845AD1B28999A5B0026C2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C845AD1928999A5B0026C2EB /* LaunchScreen.storyboard */; };
@@ -27,6 +28,7 @@
 		C8233466289D8E2E00F956FE /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		C8233467289D8E2E00F956FE /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		C823346C289D903800F956FE /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
+		C823346E289D95D400F956FE /* TabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
 		C845AD0B28999A530026C2EB /* SurfSummerSchoolProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfSummerSchoolProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C845AD0E28999A530026C2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C845AD1728999A5B0026C2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				C823346C289D903800F956FE /* TabBarModel.swift */,
+				C823346E289D95D400F956FE /* TabBarConfigurator.swift */,
 			);
 			path = TabBarModule;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				C8233460289D7CE700F956FE /* ProfileViewController.swift in Sources */,
 				C845AD0F28999A530026C2EB /* AppDelegate.swift in Sources */,
 				C8233468289D8E2E00F956FE /* FavoriteViewController.swift in Sources */,
+				C823346F289D95D400F956FE /* TabBarConfigurator.swift in Sources */,
 				C823346D289D903800F956FE /* TabBarModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
