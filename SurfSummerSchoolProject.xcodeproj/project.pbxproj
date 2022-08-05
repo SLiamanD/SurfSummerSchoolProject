@@ -11,9 +11,10 @@
 		C823345D289D764900F956FE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C823345B289D764900F956FE /* MainViewController.xib */; };
 		C8233460289D7CE700F956FE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823345E289D7CE700F956FE /* ProfileViewController.swift */; };
 		C8233461289D7CE700F956FE /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C823345F289D7CE700F956FE /* ProfileViewController.xib */; };
+		C8233468289D8E2E00F956FE /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8233466289D8E2E00F956FE /* FavoriteViewController.swift */; };
+		C8233469289D8E2E00F956FE /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8233467289D8E2E00F956FE /* FavoriteViewController.xib */; };
+		C823346D289D903800F956FE /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823346C289D903800F956FE /* TabBarModel.swift */; };
 		C845AD0F28999A530026C2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C845AD0E28999A530026C2EB /* AppDelegate.swift */; };
-		C845AD1328999A530026C2EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C845AD1228999A530026C2EB /* ViewController.swift */; };
-		C845AD1628999A530026C2EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C845AD1428999A530026C2EB /* Main.storyboard */; };
 		C845AD1828999A5B0026C2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C845AD1728999A5B0026C2EB /* Assets.xcassets */; };
 		C845AD1B28999A5B0026C2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C845AD1928999A5B0026C2EB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -23,10 +24,11 @@
 		C823345B289D764900F956FE /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		C823345E289D7CE700F956FE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C823345F289D7CE700F956FE /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		C8233466289D8E2E00F956FE /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		C8233467289D8E2E00F956FE /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		C823346C289D903800F956FE /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
 		C845AD0B28999A530026C2EB /* SurfSummerSchoolProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfSummerSchoolProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C845AD0E28999A530026C2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C845AD1228999A530026C2EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C845AD1528999A530026C2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C845AD1728999A5B0026C2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C845AD1A28999A5B0026C2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C845AD1C28999A5B0026C2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +45,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8233462289D8D8100F956FE /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				C823346B289D8FFF00F956FE /* TabBarModule */,
+				C8233465289D8E0900F956FE /* FavoriteModule */,
+				C8233464289D8DE700F956FE /* ProfileModule */,
+				C8233463289D8DB500F956FE /* MainModule */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		C8233463289D8DB500F956FE /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				C823345B289D764900F956FE /* MainViewController.xib */,
+				C823345A289D764900F956FE /* MainViewController.swift */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		C8233464289D8DE700F956FE /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				C823345F289D7CE700F956FE /* ProfileViewController.xib */,
+				C823345E289D7CE700F956FE /* ProfileViewController.swift */,
+			);
+			path = ProfileModule;
+			sourceTree = "<group>";
+		};
+		C8233465289D8E0900F956FE /* FavoriteModule */ = {
+			isa = PBXGroup;
+			children = (
+				C8233466289D8E2E00F956FE /* FavoriteViewController.swift */,
+				C8233467289D8E2E00F956FE /* FavoriteViewController.xib */,
+			);
+			path = FavoriteModule;
+			sourceTree = "<group>";
+		};
+		C823346A289D8EA400F956FE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C845AD1928999A5B0026C2EB /* LaunchScreen.storyboard */,
+				C845AD1728999A5B0026C2EB /* Assets.xcassets */,
+				C845AD1C28999A5B0026C2EB /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C823346B289D8FFF00F956FE /* TabBarModule */ = {
+			isa = PBXGroup;
+			children = (
+				C823346C289D903800F956FE /* TabBarModel.swift */,
+			);
+			path = TabBarModule;
+			sourceTree = "<group>";
+		};
 		C845AD0228999A530026C2EB = {
 			isa = PBXGroup;
 			children = (
@@ -63,15 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				C845AD0E28999A530026C2EB /* AppDelegate.swift */,
-				C845AD1228999A530026C2EB /* ViewController.swift */,
-				C845AD1428999A530026C2EB /* Main.storyboard */,
-				C845AD1728999A5B0026C2EB /* Assets.xcassets */,
-				C845AD1928999A5B0026C2EB /* LaunchScreen.storyboard */,
-				C823345E289D7CE700F956FE /* ProfileViewController.swift */,
-				C823345F289D7CE700F956FE /* ProfileViewController.xib */,
-				C845AD1C28999A5B0026C2EB /* Info.plist */,
-				C823345A289D764900F956FE /* MainViewController.swift */,
-				C823345B289D764900F956FE /* MainViewController.xib */,
+				C8233462289D8D8100F956FE /* MainFlow */,
+				C823346A289D8EA400F956FE /* Application */,
 			);
 			path = SurfSummerSchoolProject;
 			sourceTree = "<group>";
@@ -136,7 +187,7 @@
 			files = (
 				C845AD1B28999A5B0026C2EB /* LaunchScreen.storyboard in Resources */,
 				C845AD1828999A5B0026C2EB /* Assets.xcassets in Resources */,
-				C845AD1628999A530026C2EB /* Main.storyboard in Resources */,
+				C8233469289D8E2E00F956FE /* FavoriteViewController.xib in Resources */,
 				C8233461289D7CE700F956FE /* ProfileViewController.xib in Resources */,
 				C823345D289D764900F956FE /* MainViewController.xib in Resources */,
 			);
@@ -150,23 +201,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C823345C289D764900F956FE /* MainViewController.swift in Sources */,
-				C845AD1328999A530026C2EB /* ViewController.swift in Sources */,
 				C8233460289D7CE700F956FE /* ProfileViewController.swift in Sources */,
 				C845AD0F28999A530026C2EB /* AppDelegate.swift in Sources */,
+				C8233468289D8E2E00F956FE /* FavoriteViewController.swift in Sources */,
+				C823346D289D903800F956FE /* TabBarModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C845AD1428999A530026C2EB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C845AD1528999A530026C2EB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C845AD1928999A5B0026C2EB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -303,7 +347,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZXWF3WYS4X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SurfSummerSchoolProject/Info.plist;
+				INFOPLIST_FILE = SurfSummerSchoolProject/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -332,7 +376,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZXWF3WYS4X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SurfSummerSchoolProject/Info.plist;
+				INFOPLIST_FILE = SurfSummerSchoolProject/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
