@@ -9,14 +9,10 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    override func loadView() {
-        super.loadView()
-        print("loadView")
-    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("viewDidLoad")
     }
 
 }
