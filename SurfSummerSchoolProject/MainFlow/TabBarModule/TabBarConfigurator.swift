@@ -1,49 +1,55 @@
 //
 //  TabBarConfigurator.swift
-//  SurfSummerSchoolProject
+//  SurfEducationProject
 //
-//  Created by Алексей Грачев on 05.08.2022.
+//  Created by Malygin Georgii on 03.08.2022.
 //
 
 import Foundation
 import UIKit
 
+final class TabBarConfigurator {
 
-class TabBarConfigurator {
-    
     // MARK: - Private property
-    
+
     private let allTab: [TabBarModel] = [.main, .favorite, .profile]
-    
-     // MARK: - Internal func
-    
+
+    // MARK: - Internal Methods
+
     func configure() -> UITabBarController {
-        return UITabBarController()
+        return getTabBarController()
     }
+
 }
 
+// MARK: - Private Methods
+
 private extension TabBarConfigurator {
+
     func getTabBarController() -> UITabBarController {
         let tabBarController = UITabBarController()
         tabBarController.tabBar.tintColor = .black
         tabBarController.tabBar.unselectedItemTintColor = .lightGray
-        tabBarController.tabBar.barTintColor = .white
-        tabBarController.viewControllers = getControllers()
+        tabBarController.tabBar.backgroundColor = .white
+        tabBarController.viewControllers = getViewControllers()
+
         return tabBarController
     }
-    
-    func getControllers() -> [UIViewController] {
+
+    func getViewControllers() -> [UIViewController] {
         var viewControllers = [UIViewController]()
-        
+
         allTab.forEach { tab in
             let controller = getCurrentViewController(tab: tab)
+            let navigationController = UINavigationController(rootViewController: controller)
             let tabBarItem = UITabBarItem(title: tab.title, image: tab.image, selectedImage: tab.selectedImage)
             controller.tabBarItem = tabBarItem
-            viewControllers.append(controller)
+            viewControllers.append(navigationController)
         }
+
         return viewControllers
     }
-    
+
     func getCurrentViewController(tab: TabBarModel) -> UIViewController {
         switch tab {
         case .main:
@@ -54,4 +60,5 @@ private extension TabBarConfigurator {
             return ProfileViewController()
         }
     }
+
 }
