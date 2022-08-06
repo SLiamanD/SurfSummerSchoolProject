@@ -18,7 +18,7 @@ class TabBarConfigurator {
      // MARK: - Internal func
     
     func configure() -> UITabBarController {
-        return UITabBarController()
+        return getTabBarController()
     }
 }
 
