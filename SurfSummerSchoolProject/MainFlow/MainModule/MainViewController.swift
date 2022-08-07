@@ -9,6 +9,11 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    // MARK: - Private Properties
+    
+    
+    private let model: MainModel = .init()
+    
     
     // MARK: - Vies
 
@@ -18,9 +23,37 @@ class MainViewController: UIViewController {
     // MARK: Lifecyrcle
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureApperance()
+        configureModel()
+        model.getPosts()
     }
     
 }
+
+
+
+// MARK: Private Methods
+
+
+private extension MainViewController {
+
+    func configureApperance() {
+        collectionView.dataSource = self
+        
+    }
+    
+    func configureModel() {
+        model.didItemsUpdate = { [weak self] in
+            self?.collectionView.reloadData()
+            
+        }
+    }
+    
+    
+}
+
+
+// MARK: UICollection
 
 extension MainViewController: UICollectionViewDataSource {
     
