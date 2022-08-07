@@ -38,7 +38,7 @@
                 <constraint firstItem="B3B-W8-6Fj" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="hpc-ba-UcU"/>
                 <constraint firstItem="B3B-W8-6Fj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yXh-m6-SRo"/>
             </constraints>
-            <point key="canvasLocation" x="-832" y="129"/>
+            <point key="canvasLocation" x="-720" y="-18"/>
         </view>
     </objects>
     <resources>
