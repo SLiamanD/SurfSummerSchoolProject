@@ -18,6 +18,7 @@
 		C845AD0F28999A530026C2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C845AD0E28999A530026C2EB /* AppDelegate.swift */; };
 		C845AD1828999A5B0026C2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C845AD1728999A5B0026C2EB /* Assets.xcassets */; };
 		C845AD1B28999A5B0026C2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C845AD1928999A5B0026C2EB /* LaunchScreen.storyboard */; };
+		C8544988289FB921009F43CB /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8544987289FB921009F43CB /* MainModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C845AD1728999A5B0026C2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C845AD1A28999A5B0026C2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C845AD1C28999A5B0026C2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8544987289FB921009F43CB /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				C823345A289D764900F956FE /* MainViewController.swift */,
 				C823345B289D764900F956FE /* MainViewController.xib */,
+				C8544987289FB921009F43CB /* MainModel.swift */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				C823345C289D764900F956FE /* MainViewController.swift in Sources */,
 				C8233460289D7CE700F956FE /* ProfileViewController.swift in Sources */,
 				C845AD0F28999A530026C2EB /* AppDelegate.swift in Sources */,
+				C8544988289FB921009F43CB /* MainModel.swift in Sources */,
 				C8233468289D8E2E00F956FE /* FavoriteViewController.swift in Sources */,
 				C823346F289D95D400F956FE /* TabBarConfigurator.swift in Sources */,
 				C823346D289D903800F956FE /* TabBarModel.swift in Sources */,
