@@ -1,8 +1,8 @@
 //
-//  TabBarConfigurator.swift
-//  SurfEducationProject
+//  TabBarModel.swift
+//  SurfSummerSchoolProject
 //
-//  Created by Malygin Georgii on 03.08.2022.
+//  Created by Алексей Грачев on 05.08.2022.
 //
 
 import Foundation
@@ -32,12 +32,23 @@ private extension TabBarConfigurator {
         tabBarController.tabBar.unselectedItemTintColor = .lightGray
         tabBarController.tabBar.backgroundColor = .white
         tabBarController.viewControllers = getViewControllers()
-
         return tabBarController
     }
 
     func getViewControllers() -> [UIViewController] {
         var viewControllers = [UIViewController]()
+        
+        
+        func getCurrentViewController(tab: TabBarModel) -> UIViewController {
+            switch tab {
+            case .main:
+                return MainViewController()
+            case .favorite:
+                return FavoriteViewController()
+            case .profile:
+                return ProfileViewController()
+            }
+        }
 
         allTab.forEach { tab in
             let controller = getCurrentViewController(tab: tab)
@@ -46,19 +57,9 @@ private extension TabBarConfigurator {
             controller.tabBarItem = tabBarItem
             viewControllers.append(navigationController)
         }
-
         return viewControllers
     }
 
-    func getCurrentViewController(tab: TabBarModel) -> UIViewController {
-        switch tab {
-        case .main:
-            return MainViewController()
-        case .favorite:
-            return FavoriteViewController()
-        case .profile:
-            return ProfileViewController()
-        }
-    }
+
 
 }

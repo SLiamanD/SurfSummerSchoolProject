@@ -19,8 +19,6 @@
 		C845AD1828999A5B0026C2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C845AD1728999A5B0026C2EB /* Assets.xcassets */; };
 		C845AD1B28999A5B0026C2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C845AD1928999A5B0026C2EB /* LaunchScreen.storyboard */; };
 		C8544988289FB921009F43CB /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8544987289FB921009F43CB /* MainModel.swift */; };
-		C854498C28A026E8009F43CB /* MainItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854498A28A026E8009F43CB /* MainItemCollectionViewCell.swift */; };
-		C854498D28A026E8009F43CB /* MainItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C854498B28A026E8009F43CB /* MainItemCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +36,6 @@
 		C845AD1A28999A5B0026C2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C845AD1C28999A5B0026C2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8544987289FB921009F43CB /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
-		C854498A28A026E8009F43CB /* MainItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		C854498B28A026E8009F43CB /* MainItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainItemCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +137,6 @@
 		C854498928A02675009F43CB /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				C854498A28A026E8009F43CB /* MainItemCollectionViewCell.swift */,
-				C854498B28A026E8009F43CB /* MainItemCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -207,7 +201,6 @@
 			files = (
 				C845AD1B28999A5B0026C2EB /* LaunchScreen.storyboard in Resources */,
 				C845AD1828999A5B0026C2EB /* Assets.xcassets in Resources */,
-				C854498D28A026E8009F43CB /* MainItemCollectionViewCell.xib in Resources */,
 				C8233469289D8E2E00F956FE /* FavoriteViewController.xib in Resources */,
 				C8233461289D7CE700F956FE /* ProfileViewController.xib in Resources */,
 				C823345D289D764900F956FE /* MainViewController.xib in Resources */,
@@ -225,7 +218,6 @@
 				C8233460289D7CE700F956FE /* ProfileViewController.swift in Sources */,
 				C845AD0F28999A530026C2EB /* AppDelegate.swift in Sources */,
 				C8544988289FB921009F43CB /* MainModel.swift in Sources */,
-				C854498C28A026E8009F43CB /* MainItemCollectionViewCell.swift in Sources */,
 				C8233468289D8E2E00F956FE /* FavoriteViewController.swift in Sources */,
 				C823346F289D95D400F956FE /* TabBarConfigurator.swift in Sources */,
 				C823346D289D903800F956FE /* TabBarModel.swift in Sources */,

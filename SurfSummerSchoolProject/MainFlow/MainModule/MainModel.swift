@@ -23,14 +23,8 @@ final class MainModel {
         }
     }
     
-    
-    
     func getPosts() {
-
         item = Array(repeating: ItemModel.createDefault(), count: 100)
-
-        
-        
     }
     
     
