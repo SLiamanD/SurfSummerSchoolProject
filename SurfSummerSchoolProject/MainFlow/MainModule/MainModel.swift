@@ -11,12 +11,10 @@ import UIKit
 final class MainModel {
     
     // MARK: Events
-    
     var didItemsUpdate: (()->Void)?
     
     
     //MARK: properties
-    
     var item: [ItemModel] = [] {
         didSet {
             didItemsUpdate?()
